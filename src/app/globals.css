@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@keyframes scrollText {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .animate-scroll-text {
+    white-space: nowrap;
+    animation: scrollText 10s linear infinite;
+  }
+  
+  /* Keyframes for fade-in animation */
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Default styles for elements to be animated */
+  .animate-on-load {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  
+  /* Fade-in animation when the class is added */
+  .animate-fade-in {
+    animation: fadeIn 1.5s ease-out forwards;
+  }
+  
+  /* Optional: Delay classes for staggered animations */
+  .delay-300 {
+    animation-delay: 0.3s;
+  }
+  
+  .delay-600 {
+    animation-delay: 0.6s;
+  }
+  
+  .delay-900 {
+    animation-delay: 0.9s;
+  }
+   /* Keyframes for fade-in animation */
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Default styles for elements to be animated */
+  .animate-on-load {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  
+  /* Fade-in animation when the class is added */
+  .animate-fade-in {
+    animation: fadeIn 1.5s ease-out forwards;
+  }
+  
+  /* Optional: Delay classes for staggered animations */
+  .delay-300 {
+    animation-delay: 0.3s;
+  }
+  
+  .delay-600 {
+    animation-delay: 0.6s;
+  }
+  
+  .delay-900 {
+    animation-delay: 0.9s;
+  }
+  
+  /* Keyframes for continuous scrolling effect */
+@keyframes scrollText {
+    0% {
+      transform: translateX(100%); /* Start from the right */
+    }
+    100% {
+      transform: translateX(-100%); /* Move completely to the left */
+    }
+  }
+  
+  /* Apply scrolling animation */
+  .animate-scroll {
+    display: inline-block; /* Ensures the text or content can scroll */
+    animation: scrollText 15s linear infinite; /* Adjust the duration to control speed */
+    white-space: nowrap; /* Prevent text from wrapping to the next line */
+  }
+  
+  /* Optional: Add padding to prevent text from getting cut off */
+  #experience {
+    overflow: hidden; /* Hide the content outside the scroll area */
+  }
+  
